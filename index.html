@@ -28,9 +28,11 @@ body {
 
 .invitation-card {
     background: linear-gradient(to bottom, #0f3460 0%, #16213e 50%, #0f3460 100%);
-    border-radius: 30px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 90vh;
     padding: 40px;
+    border-radius: 30px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
@@ -40,8 +42,8 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: 30px;
     padding: 3px;
+    border-radius: 30px;
     background: linear-gradient(135deg, #ffd700, #ffed4e, #ffd700);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
@@ -59,7 +61,7 @@ body {
 .seal {
     width: 100px;
     height: 100px;
-    margin: 30px auto 25px;
+    margin: 25px auto;
     background: rgba(255, 215, 0, 0.1);
     border-radius: 50%;
     display: flex;
@@ -82,23 +84,26 @@ body {
 }
 
 .graduate-name {
-    font-size: 38px;
     font-family: 'Great Vibes', cursive;
+    font-size: 38px;
     margin-bottom: 35px;
 }
 
 .event-details {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: 30px;
     padding-top: 30px;
     border-top: 2px solid rgba(255, 215, 0, 0.3);
 }
 
-.detail-box-colacao:not(:last-child) {
-    border-right: 1px solid rgba(255, 215, 0, 0.2);
-    padding-right: 50px;
+.detail-box {
+    text-align: center;
+    padding: 0 25px;
+}
+
+.detail-box:first-child {
+    border-right: 1px solid rgba(255, 215, 0, 0.25);
 }
 
 .detail-label {
@@ -115,7 +120,7 @@ body {
 }
 
 .location-info {
-    margin-top: 25px;
+    margin-top: 30px;
     padding: 20px;
     background: rgba(255, 215, 0, 0.05);
     border-radius: 15px;
@@ -126,7 +131,7 @@ body {
     color: #ffd700;
     font-size: 14px;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .location-info p {
@@ -134,20 +139,30 @@ body {
     line-height: 1.8;
 }
 
-/* Escala proporcional no celular */
 @media (max-width: 600px) {
-    .invitation-card {
-        transform: scale(1.0);
+    body {
+        padding: 0;
+        align-items: stretch;
     }
-}
 
-@media (max-width: 420px) {
     .invitation-card {
-        transform: scale(1.0);
-        
+        max-width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        padding: 35px 25px;
     }
-    .detail-box-local {
-        margin-right: 25px;
+
+    .invitation-card::before {
+        border-radius: 0;
+    }
+
+    .graduate-name {
+        font-size: 32px;
+    }
+
+    .course-title {
+        font-size: 13px;
+        letter-spacing: 2px;
     }
 }
 </style>
@@ -164,7 +179,7 @@ body {
         <h1 class="graduate-name">Emanuelle Lima e Lima</h1>
 
         <div class="event-details">
-            <div class="detail-box-colacao">
+            <div class="detail-box">
                 <div class="detail-label">Colação</div>
                 <div class="detail-info">
                     25/02/2025<br>
@@ -172,7 +187,7 @@ body {
                 </div>
             </div>
 
-            <div class="detail-box-local">
+            <div class="detail-box">
                 <div class="detail-label">Local</div>
                 <div class="detail-info">
                     EST - UEA<br>
