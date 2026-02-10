@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite de Colação de Grau</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&family=Allura&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.invitation-card {
+    background: linear-gradient(to bottom, #0f3460 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 30px;
+    width: 500px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.invitation-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    padding: 3px;
+    background: linear-gradient(135deg, #ffd700, #ffed4e, #ffd700);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.seal {
+    width: 100px;
+    height: 100px;
+    margin: 30px auto 25px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ffd700;
+}
+
+.seal::before {
+    content: '🎓';
+    font-size: 50px;
+}
+
+.course-title {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.graduate-name {
+    font-size: 38px;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 35px;
+}
+
+.event-details {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.detail-box-colacao:not(:last-child) {
+    border-right: 1px solid rgba(255, 215, 0, 0.2);
+    padding-right: 50px;
+}
+
+.detail-label {
+    font-size: 16px;
+    font-style: italic;
+    color: #ffd700;
+    margin-bottom: 8px;
+}
+
+.detail-info {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.location-info {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255, 215, 0, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.location-info strong {
+    color: #ffd700;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.location-info p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Escala proporcional no celular */
+@media (max-width: 600px) {
+    .invitation-card {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 420px) {
+    .invitation-card {
+        transform: scale(0.8);
+        
+    }
+    .detail-box-local {
+        margin-right: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="invitation-card">
+    <div class="content">
+
+        <div class="seal"></div>
+
+        <div class="course-title">Engenharia de Controle e Automação</div>
+
+        <h1 class="graduate-name">Emanuelle Lima e Lima</h1>
+
+        <div class="event-details">
+            <div class="detail-box-colacao">
+                <div class="detail-label">Colação</div>
+                <div class="detail-info">
+                    25/02/2025<br>
+                    Horário a confirmar
+                </div>
+            </div>
+
+            <div class="detail-box-local">
+                <div class="detail-label">Local</div>
+                <div class="detail-info">
+                    EST - UEA<br>
+                    Av. Darcy Vargas<br>
+                    Manaus - AM
+                </div>
+            </div>
+        </div>
+
+        <div class="location-info">
+            <strong>📍 Endereço Completo:</strong>
+            <p>
+                Escola Superior de Tecnologia - UEA<br>
+                Avenida Darcy Vargas<br>
+                Manaus, Amazonas
+            </p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
