@@ -90,21 +90,26 @@ body {
 }
 
 .event-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
-    padding-top: 30px;
-    border-top: 2px solid rgba(255, 215, 0, 0.3);
+    display: flex;               /* Flex no lugar do grid */
+    flex-direction: column;      /* Coloca os filhos em coluna */
+    align-items: center;         /* Centraliza horizontalmente */
+    justify-content: center;     /* Centraliza verticalmente */
+    padding: 30px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #0f3460 0%, #16213e 100%);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    max-width: 400px;
 }
+
 
 .detail-box {
     text-align: center;
     padding: 0 25px;
 }
 
-.detail-box:first-child {
-    border-right: 1px solid rgba(255, 215, 0, 0.25);
-}
 
 .detail-label {
     font-size: 16px;
@@ -190,6 +195,15 @@ body {
 
         <h1 class="graduate-name">Emanuelle Lima e Lima</h1>
 
+        <div class="event-details">
+            <div class="detail-box">
+                <div class="detail-label">Comemoração</div>
+                <div class="detail-info">
+                    25/02/2025<br>
+                    21:00 horas
+                </div>
+            </div>
+        </div>  
 
         <div class="location-info">
             <strong>📍 Endereço Comemoração:</strong>
@@ -204,7 +218,6 @@ body {
                 Loppiano Pizza<br/>
                 Av. Ayrão, 1080 - Praça 14 de Janeiro<br>
                 Manaus, Amazonas<br>
-                25/02/2026 - 21h
             </a>
         </div>
 
