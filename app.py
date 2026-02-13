@@ -10,12 +10,12 @@ scopes = [
 ]
 
 creds = Credentials.from_service_account_file(
-    "formatura-amor-76d172aa8bb9.json",
+    "formatura-amor-1-6aa6a56574ce.json",
     scopes=scopes
 )
 
 client = gspread.authorize(creds)
-SPREADSHEET_ID = "19V3OBgXU5JydMtAlYbwfEiAsboGRPJ6OKYwXxNK6nZg"
+SPREADSHEET_ID = "1DPmHq2y10ei_S0t4bAxWNKZeNhOTb9hEKBBskuVjZyM"
 SHEET = client.open_by_key(SPREADSHEET_ID).worksheet("Página1")
 
 st.set_page_config(page_title="Convite", layout="centered")

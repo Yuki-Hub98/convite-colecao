@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "formatura-amor",
+  "private_key_id": "6aa6a56574cec6725aa7a993f216f42c3c36306d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2Td8cf24vBoM/\nlva0dSR13h099R9LJUI0YDWpT9/ebrqJ2bSz+80LTbeL1kBvi+ZZqRUTnC/9GnhI\nRmxClgkzTM6V/s0PKox2qgbUAayukdr1wfswrF/p1D33rpLZ2NVzzvsDquKwI5Wy\ncTXFd6RZAtJrIRJWHYVMRfdvK0KlCZDQjP0L2TObTTYWsHHVZOD5hgXlHdcP+pFZ\nagC6+NM9cqR+1X0QmrT9kSZ29h4NUNtu5S6DtuKdMAkpgExTiGmw/gq+XhdPse4K\ngBsFqFZUcXnRJU2DOum0Cb0Jn6yFykDlmEyPuFWHeOJ+LQH+gYMDB3U4AIXYqsjL\nMBiWsr0TAgMBAAECggEAFoCnNRPPrHNP2RYPzreU8A2iK2cp3TM0qFVl2kfXONQP\nJ3vdb8f5h9cofFTOcFZi8RdLWDfTvpi5VyaGL3Pon9HvwBkLA7+7Rdx36kxoncW4\nMtSmZlwonKrLmVqNmuFGe7yFRG8f+yDxVezed8jsWuZbxch3xHRxYzhRsgGzgL5n\nZtzKAm775lS4YELAo4FS9JqSgZIH9CT6F5/QSXezrdtHho4Hj7Tss/WBz81/IgE5\nxG598WT3jDfXAIOYKTMXbVcMvgwgBIOwzNm8AepK8cff8lESFyXh8nvZtgF8P5G6\nJ78hrdjSCHTd+e1msFLcsd4F+bmtlWeQrJ+1hBtWYQKBgQDv7+arn3MoIpOd/lD4\neb0p5cy0UFdKwNm92aZXPz1p1q9rwjRFM6tBvh0FMwIy1kPHK4eAVgAPNBQAO2jw\nU54YHfy8u9glTvSnEvd2rLNiyxPyN3Bsc+Qu2H170VuyHOjPXa8/2NJ8zc/U2Qwd\nwpNBUnw5WmFn8W3DgENEXNxdIQKBgQDCgj5lkypFV5JxB2QM0e7fUTH/P+pvEAtQ\ns/+6mEr8HDjKRBq4HduEHmynJlKK0kds+kV5pl4DZVTVGTzKf4D7JrqrF+d979mC\n4yMIAv81hB4q0wBDRCgg0zs8JSk2pWN0LJY8CqoqhXKbyhQ6vz52c7akKbWbeMoM\nZCaQCOK/swKBgQC/5W/obTNNszG6185sm/j1jGwG/oaCK/E5zNwjxVlZz7EnDwB9\nJFDg2KsfIGeuvv0gSykpNB8CCdXBRcKtC0NS6JDdZaL+W8KB6UJv8Lnb1q2SOFK6\n+olSCiV6JLwgnMx6JORnvQLDfFuvURRGrPrW8KCXwjhLSKVQCcJC57364QKBgDBF\n9Mhuyrnk7wJATFNmMruXwinQKhWgTL6dvaUIsOt68Zk5Z8w0FMvoZRzixO+RGorw\nXhe/82syVeiBV/YFyPQL+54E074MrdXvGz2cyMv2WypTragEHVVwNy5JJr5aM6Gc\ngzipiOv+rJ//eh/OYOky9KwvcdQBGVwT6wIqQmRDAoGBAJJKqIQ0gYREPx8qCW+v\niUcXI5KrJt/LkXU+EqrzhOPCn/L++3Fqu//HuMdvGw3h0F8CEECqF3MlN2gksbGy\nezlFELI4NVX28y4xM7ehKk1Bhs1pOoZLY6en5b5ClS4QKcxcXJV9uZN3vTvudIBR\nVz1lsPjBdE9j/WLBkvTFSmne\n-----END PRIVATE KEY-----\n",
+  "client_email": "formatura-amor@formatura-amor.iam.gserviceaccount.com",
+  "client_id": "113721184365916622613",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/formatura-amor%40formatura-amor.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
