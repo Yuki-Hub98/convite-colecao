@@ -211,7 +211,14 @@ body {
 
         <div class="location-info" target="_blank">
             <strong>📍 Endereço Completo:</strong>
-            <a href="https://maps.app.goo.gl/JNbYZhgWzW4DrJMU9">
+            <a href="#" onclick="
+                if (window.innerWidth < 768) {
+                    
+                    window.open('https://maps.app.goo.gl/uH3nnzA37AG5PXBX8', '_blank'); // mobile
+                } else {
+                    window.location.href = 'https://maps.app.goo.gl/uH3nnzA37AG5PXBX8'; // desktop
+                }
+            ">
                 Escola Superior de Tecnologia - UEA<br>
                 Avenida Darcy Vargas<br>
                 Manaus, Amazonas
@@ -219,7 +226,14 @@ body {
         </div>
         <div class="location-info">
             <strong>📍 Endereço Comemoração:</strong>
-            <a href="https://maps.app.goo.gl/s1Y8YkRfpqdrq3Nq9" target="_blank">
+            <a href="#" onclick="
+                if (window.innerWidth < 768) {
+                    
+                    window.open('https://maps.app.goo.gl/s1Y8YkRfpqdrq3Nq9', '_blank'); // mobile
+                } else {
+                    window.location.href = 'https://maps.app.goo.gl/s1Y8YkRfpqdrq3Nq9'; // desktop
+                }
+            ">
                 Loppiano Pizza<br/>
                 Av. Ayrão, 1080 - Praça 14 de Janeiro<br>
                 Manaus, Amazonas
