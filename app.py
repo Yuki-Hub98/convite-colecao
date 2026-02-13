@@ -26,7 +26,7 @@ with open("index.html", "r", encoding="utf-8") as f:
 
 st.components.v1.html(
     html,
-    height=900,
+    height=500,
     scrolling=False
 )
 
