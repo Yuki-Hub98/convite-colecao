@@ -30,7 +30,7 @@ body {
     background: linear-gradient(to bottom, #0f3460 0%, #16213e 50%, #0f3460 100%);
     width: 100%;
     max-width: 500px;
-    min-height: 90vh;
+    min-height: fit-content;
     padding: 40px;
     border-radius: 30px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -139,6 +139,18 @@ body {
     line-height: 1.8;
 }
 
+.location-info a {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #e0e0e0;
+    text-decoration: none;
+    display: block;
+}
+
+.location-info a:hover {
+    color: #ffd700;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 0;
@@ -199,14 +211,31 @@ body {
 
         <div class="location-info">
             <strong>📍 Endereço Completo:</strong>
-            <p>
+            <a href="https://maps.app.goo.gl/JNbYZhgWzW4DrJMU9">
                 Escola Superior de Tecnologia - UEA<br>
                 Avenida Darcy Vargas<br>
                 Manaus, Amazonas
-            </p>
+            </a>
+        </div>
+        <div class="location-info">
+            <strong>📍 Endereço Comemoração:</strong>
+            <a href="https://maps.app.goo.gl/s1Y8YkRfpqdrq3Nq9">
+                Loppiano Pizza<br/>
+                Av. Ayrão, 1080 - Praça 14 de Janeiro<br>
+                Manaus, Amazonas
+            </a>
         </div>
 
     </div>
 </div>
+
+<script>
+function toggleConfirm() {
+    const box = document.getElementById("confirmBox");
+    box.classList.toggle("show");
+}
+
+</script>
+
 </body>
 </html>
